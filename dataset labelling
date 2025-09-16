@@ -1,0 +1,20 @@
+14.8.25
+
+label_dict = {
+    "bjp": 1, "modi": 1, "amit": 1, "shah": 1,        # Support BJP
+    "tmc": 2, "mamata": 2, "banerjee": 2,             # Support TMC
+    "left": 3, "cpi": 3, "marxist": 3,                # Support LeftFront
+    "removebjp": 4, "againstbjp": 4,                  # Against BJP
+    "removetmc": 5, "againsttmc": 5,                  # Against TMC
+    "removeleft": 6, "againstleft": 6                 # Against LeftFront
+}
+
+
+modiglobaldisaster :4             freq-1
+idiotpmmodi :4             freq-1
+idiotpm:4             freq-1
+Feku:4		freq-1
+asol poriborton:1 freq-1
+MamtaBanerjeeKoJaiShriRam:1 freq-1
+farmers:4 freq-1
+[PM,self promotion] : 4     freq-1
