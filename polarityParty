@@ -1,0 +1,25 @@
+positive_words = ["support","vote for","win","love","good","indiawithmodi","bengalwithnamo","bengalwithbjp","bengalwelcomesmodi",
+                  "mamtabanerjeekojaishriram","jaishriram","dhekiajuliwelcomesmodi","bjpgorbesonarbangla","atmanirbharpurvibharat",
+                  "modiwithfarmers","bengalwelcomespm","banglanijermeyekeichay","runformodi","khelahobe","didirdoot","pradeepteamattacked",
+                  "joybangla","bengalwantsitsowndaughter","ebarbanglaybjp","bengalbudgetforall","sonarbangla","bjpforbengal",
+                  "poribortoninbengal","sonarbanglaelectrified","bengalneedsleft","teamnamo","vote4modi","pariwartanyatra"
+                  ,"toolkitexposed","gretatoolkit","gretathunbergtoolkit","standwithdilipmandal"
+                  ] # for polarity
+
+negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocracy","godimedia","bengalrejectsmodi",
+                  "bengalrejectsbjp","fakepromises","idiotpmmodi","feku","modiglobaldisaster","idiotpm","boycottbjp",
+                  "chaiconspiracy","leftlibgang","antifarmlaws","worldrenownedliar","modidhongihai","ram_card",
+                  "mamtabanerjeekojaishriram","tmchataobanglabachao","uttarakhanddisaster","gretathunberg","murderermamata",
+                  "neverforgetneverforgive","bjpgoonsattackingfarmers","rishiganga","wearewithutearakhand","prayforuttarakhand",
+                  "propoganda","glaciar_burst","chamoli","flood","pmmodibusy","bhaipo","releasenodeepkaur","bangladidirthekemuktichay",
+                  "tukdetukde","conspiracyagainstBengal","bjpfailsindia","bjppetroltaxloot","divideandruleparty","toolkit"
+                  ,"puppets","modi_rojgar_do","naukaridoyadegreewapaslo","gobackmodi","chonkidaarchorhai","bjpthepartyisover","pishijao",
+                  "pishijoyshreeram","hindu_muslim_propaganda","BJPInsultsMaaDurga","BJPAgainstNation","bjp_against_true_indians",
+                  "fuelloot","bjpagainstfarmers","pamelagoswami","cocaine","pradeepteamattacked","junkiesofbjp","jihadididi",
+                  "bjpyouthleaderpamela","pameladrugs","bjpsehobena","petroldieselpricehike","petrolpricehike","petrolprice","dieselprice",
+                  "justiceforsushantsinghrajput","justice4dishasalian","dpstopintimidatingfarmers","istandwithfarmers","rollbackmoditax",
+                  "releasedetainedfarmers","railrokoforfarmers","modifuelscam","looteribjp","modihikespetrolprice",
+                  "bjpsebetibachao","saradhascam","save_unnao_ki_beti","petrol100","farmlaws","rakeshtikait","mumtazbano",
+                  "rohingyajamaat","azaannoisefree","jumla_for_bengal","releasedisharavi","toolkitexposed","farmbills2020",
+                  "scare","bjpinsultsmaadurga","goons","justicedueinssrcase","iamagainstmodigovt","indiabeingsilenced",
+                  "supportfarmers"]

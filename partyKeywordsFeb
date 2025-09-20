@@ -1,0 +1,33 @@
+#feb 2 finished
+
+party_keywords = {
+    "bjp": ["bjp","modi","amitshah","pratap_sarangi","rajnathsingh","myogiadityanath","indiawithmodi","bengalwithnamo","bengalwithbjp",
+            "bengalwelcomesmodi", "pmmodi","narendramodi","mamtabanerjeekojaishriram","jaishriram","modiji","dhekiajuliwelcomesmodi","bjpgorbesonarbangla",
+            "atmanirbharpurvibharat","godimedia","bengalrejectsmodi","bengalrejectsbjp", "idiotpmmodi", "feku", "modiglobaldisaster","idiotpm",
+            "boycottbjp","chaiconspiracy","antifarmlaws","worldrenownedliar","modidhongihai","ram_card","modiinbengal","nirmalasitharaman",
+            "gretathunberg","modiwithfarmers","bengalwelcomespm","bjpgoonsattackingfarmers","rishiganga","pmoindia",
+            "wearewithutearakhand","prayforuttarakhand","poribortonyatra","rss","glaciar_burst","Chamoli","pmfloodfund",
+            "pmmodibusy","releasenodeepkaur","breakingnews","attack","bjpfailsindia","bjppetroltaxloot","runformodi","modi_rojgar_do",
+            "pradeepteamattacked","naukaridoyadegreewapaslo","pamelagoswami","suvenduadhikari","gobackmodi","chonkidaarchorhai","bjpthepartyisover",
+            "saffron_party","uttarakhanddisaster","hindu_muslim_propaganda","BJPInsultsMaaDurga","BJPAgainstNation",
+            "bjpagainstfarmers","bjp_against_true_indians","fuelloot","cocaine","pradeepteamattacked","junkiesofbjp","bhakt",
+            "bjpyouthleaderpamela","pameladrugs","bjpsehobena","petroldieselpricehike","petrolprice","petrolpricehike","dieselprice",
+            "justiceforsushantsinghrajput","justice4dishasalian","dpstopintimidatingfarmers","ebarbanglaybjp",
+            "bengalbudgetforall","istandwithfarmers","sonarbangla","rollbackmoditax","releasedetainedfarmers","CAA","amitshahinbengal",
+            "amitshahji","railrokoforfarmers","bjpforbengal","poribortoninbengal","sonarbanglaelectrified","kisanaandolan","shahvsmamata",
+            "teamnamo","vote4modi","modifuelscam","looteribjp","modihikespetrolprice","bjpsebetibachao","chaiwala","save_unnao_ki_beti",
+            "dilipghoshbjp","pariwartanyatra","jpnadda","modigovt","petrol100","farmlaws","rakeshtikait","yashdasgupta",
+            "mithunchakraborty","jumla_for_bengal","rammandir","releasedisharavi","dineshtrivedi","farmbills2020",
+            "toolkitexposed","gretatoolkit","gretathunbergtoolkit","bjpinsultsmaadurga","mohanbhagwat",
+            "justicedueinssrcase","iamagainstmodigovt","pmkisan","supportfarmers","pmcares","ramkanaam"],
+
+    "tmc": ["tmc","trinamoolcongress","mamata","banerjee","mamtabanerjeekojaishriram","tmchataobanglabachao","didi",
+            "murderermamata","duaresarkar","paraysamadhan","mamtabanerjee","abhishekbanerjee","bhaipo","breakingnews",
+            "attack","bangladidirthekemuktichay","tukdetukde","didikebolo","banglanijermeyekeichay","khelahobe","didirdoot",
+            "joybangla","pishijao","pishijoyshreeram","bengalwantsitsowndaughter","jihadididi","jakirhossain",
+            "shahvsmamata","upenbiswas","saradhascam","zakirhussain","bombattack","zakirattack","zakirhussainminister",
+            "mumtazbano","rohingyajamaat","azaannoisefree","standwithdilipmandal","maakitchen","maakirasoi"],
+
+    "leftfront": ["left", "cpi", "marxist","leftlibgang","bengalneedsleft","communists","left_congress_alliance",
+                  "cpim","leftvspolice"]
+}

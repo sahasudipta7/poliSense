@@ -2,14 +2,12 @@
 # opinion classes 1)support for bjp 2)support for tmc 3) support for leftfront 4)against bjp 5)against tmc 6)against leftfront
 #represent this in an opinionated hypergraph.
 # py -3.11 -m pip install fastjsonschema
-# after [attack,leftlibgang,bengalwelcomespm,releasenodeepkaur] new file
 #299
 import ast
 import hypernetx as hnx
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:\Users\sahas\Downloads\february_1.csv")  #uploaded file
 df = pd.read_csv(r"C:\Users\sahas\Downloads\february_2.csv")  #uploaded file
 
 party_keywords = {
