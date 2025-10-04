@@ -1,9 +1,21 @@
+# march after standwithdilipmandal and support farmers
+
 positive_words = ["support","vote for","win","love","good","indiawithmodi","bengalwithnamo","bengalwithbjp","bengalwelcomesmodi",
                   "mamtabanerjeekojaishriram","jaishriram","dhekiajuliwelcomesmodi","bjpgorbesonarbangla","atmanirbharpurvibharat",
-                  "modiwithfarmers","bengalwelcomespm","banglanijermeyekeichay","runformodi","khelahobe","didirdoot","pradeepteamattacked",
-                  "joybangla","bengalwantsitsowndaughter","ebarbanglaybjp","bengalbudgetforall","sonarbangla","bjpforbengal",
+                  "modiwithfarmers","bengalwelcomespm","banglanijermeyekeichay","runformodi","khelahobe","didirdoot",
+                  "pradeepteamattacked","joybangla","bengalwantsitsowndaughter","ebarbanglaybjp","bengalbudgetforall","sonarbangla","bjpforbengal",
                   "poribortoninbengal","sonarbanglaelectrified","bengalneedsleft","teamnamo","vote4modi","pariwartanyatra"
-                  ,"toolkitexposed","gretatoolkit","gretathunbergtoolkit","standwithdilipmandal"
+                  ,"toolkitexposed","gretatoolkit","gretathunbergtoolkit","standwithdilipmandal","modirsathebangla",
+                  "asolparibortan","brigadecholo","modivowsasolporibortan","poribortonerbrigade","aarnoy_aarnoy",
+                  "savebengalfromtmcbjp","bengalwithbhagwa","bjp4bangal","hinduslivesmatter","speakhindiandlose",
+                  "bjp4goghat","brigadecholobengal","tmc_hatao_bjp_lao","saffrontsunami","mypmmypride","modihaitohmumkinhai",
+                  "mithunchakrabortyjoinsbjp","10ermichil","swagatamyogiji","courage","lokkhosonarbangla","ebarbanglaybjp",
+                  "gorbosonarbangla","amitmalviya","bengalwithdidi","bjpforsonarbangla","bjp4ind","didishowstheway","tmc180plus",
+                  "trinamoolcongresszindabaad","maamatimaunshzindabaad","mamatabanerjeezindabaad","voteforaitc",
+                  "bengalmaangeporibortan","mamtaaspmin2024","sanjayraut","akhileshyadav","tejashwiyadav","savehindus",
+                  "revivegreatbengal","drmanishkumar","sambitpatra","garvsekahohamhinduhain","bengalmangecongress"
+                  ,"sambitpatra","'ramdrohi_par_rann","swagatamyogiji","puducherrywelcomesmodiji","nachiketachakraborty",
+                  "bengalwithdidi"
                   ] # for polarity
 
 negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocracy","godimedia","bengalrejectsmodi",
@@ -22,4 +34,20 @@ negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocr
                   "bjpsebetibachao","saradhascam","save_unnao_ki_beti","petrol100","farmlaws","rakeshtikait","mumtazbano",
                   "rohingyajamaat","azaannoisefree","jumla_for_bengal","releasedisharavi","toolkitexposed","farmbills2020",
                   "scare","bjpinsultsmaadurga","goons","justicedueinssrcase","iamagainstmodigovt","indiabeingsilenced",
-                  "supportfarmers"]
+                  "supportfarmers","modi_job_do","bjpfailsindia","jababchaybangla","indiaagainstlpgloot","bjpcdscandal",
+                  "modi_msp_do","stopprivatisation","byebyebjp","farmerscall_bjpboycott","middleman","politicalsalesagent",
+                  "lpgpricehike","novotetobjp","hinduhatingtmc","bharatbandh","100daysfarmersprotest","rssterrorism","mamtabano",
+                  "100daysofbjparrogance","slams","paliyegelomamata","insult","notobjp","nototmc","farmersbeforevotes",
+                  "3monthsofdelhiprotest","mannkibakwaas","speakupagainstpricerise","novotetobjp","sharda","narda",
+                  "corrupt","ponzi","defeatbjp","sanyuktkisanmorcha","bku","agriculturallaw","100_day_farmer_movement",
+                  "farmersrallyinbengal","jungleraj","savewoman","savemothers","savesisters","savecow",
+                  "modiraidsprofarmers","adityanathkarakshasraaj","nojob_novote","rejectbjpjungleraj","uddhavinsultsarmy",
+                  "godhramassacre","chandrashekharazad","negativity","lose","vanideviformlc","voteforvanidevi","hathras",
+                  "yogivogihai","outsiders","modi_jawab_do","hathrascase","bjpflopshow","bjptoolkit","bjpexposed",
+                  "shameonbhakts","speakup","farmersbeforevotes","gundaraj","hathrasrape_again","justiceforhathraskibeti",
+                  "bjpsesabpareshan","moditax","looteribjp","shameless","tmchhi","tmchataobanglabachao","stophindimigration",
+                  "endhindiimposition","stophindiimperialism","congresspseudosecularism","bengalrejectscongress",
+                  "bjphataobetibachao","raped","murdered","wastebjp","aajtaksabsebekaar","modionbrokenchair",
+                  "congressagainsthindus","socalledsecularists","loosers","pmspeakuponssrcase","tmcgoons",
+                  "tomarmodikisanvirodhi"]
+
