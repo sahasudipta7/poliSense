@@ -15,7 +15,13 @@ positive_words = ["support","vote for","win","love","good","indiawithmodi","beng
                   "bengalmaangeporibortan","mamtaaspmin2024","sanjayraut","akhileshyadav","tejashwiyadav","savehindus",
                   "revivegreatbengal","drmanishkumar","sambitpatra","garvsekahohamhinduhain","bengalmangecongress"
                   ,"sambitpatra","'ramdrohi_par_rann","swagatamyogiji","puducherrywelcomesmodiji","nachiketachakraborty",
-                  "bengalwithdidi"
+                  "bengalwithdidi","vote4sonarbangla","banglayaschebjp","voteforbjp","deepakprakash","modirsatheiasolporiborton",
+                  "banglayaschebjpdidi","baranagarebjpchai","vote4sanjuktamorcha","vote4congress","didirunnayanerkhelahobe",
+                  "banglargorbomamata","bengalwantsdidiagain","banglargorbomamata","votefordidi","banglachaebjpmodel",
+                  "janatawithmamata","bhagwabengal","ebarsonarbangla","vote4rathinghosh","puruliawelcomesmodiji",
+                  "namovolunteer","ayegatomodihi","bjpmaanenirbhoyjanata","mamataisback","atmanirbharbharat",
+                  "bengalwithrajnath","yogiroxx","bongerbhumiteshah","khelatohhobe","khailahobe","134nowardtmc",
+                  "banerjeebaganunit","bengalchahebjp","sanatanadharma","myleaderrahulgandhi"
                   ] # for polarity
 
 negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocracy","godimedia","bengalrejectsmodi",
@@ -49,5 +55,20 @@ negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocr
                   "endhindiimposition","stophindiimperialism","congresspseudosecularism","bengalrejectscongress",
                   "bjphataobetibachao","raped","murdered","wastebjp","aajtaksabsebekaar","modionbrokenchair",
                   "congressagainsthindus","socalledsecularists","loosers","pmspeakuponssrcase","tmcgoons",
-                  "tomarmodikisanvirodhi"]
+                  "tomarmodikisanvirodhi","khelasheshhobe","bengalrejectsgujaratimanifesto","backstabbedbengal","socalled",
+                  "bjperongikarsonarbangla","modimadedisaster","hypocrisy","bengalbjpjokers","modiexposed","gobackmodi",
+                  "modigovt4ambaniadani","fekuinbengal","assetmonetisation","godimediasedeshbachao","alqaeda","naxal",
+                  "urbannaxals","jumlebaazinahichalehi","modinotwelcome","tmcterror","bjpfearskejriwal","4saalchaupathuahaal",
+                  "uneducatedleaders","bhainsariots","tmcisfraud","removemamta","jumla_nahin_msp_do","300deathsatprotest",
+                  "nofarmers_nofood","godimediaantifarmer","goyalghoregutoguti","humanrightsviolations","savejagannathland",
+                  "fuddupm","endofdemocracy","savedemocracy","humanityfirst","bjpdestroysdemocracy","bjpagainstdemocracy",
+                  "twofaceselfishgovt","modiharassingprofarmers","fakeitlikepishi","bjpcdscandal","fight_for_farmer_right",
+                  "jantajayebhaadmein","bjp_mukt_bharat","modisoldindia","humanrights","bankstrike","pvtpmoltd","tatatrinamool",
+                  "jumlaporiborton","khelakhotamhobe","tatadidi","castpolitics","didikadrama","arrogantdidi","oilprice",
+                  "gaddafi","saddamhussein","bankstrikebankers","shunyata","vultures","bankprivatisation","desperation",
+                  "bantibablirajasthanaao","delhigenocide2020","farmersroarinbengal","bjpfails","tadipar","releaseranjitsingh",
+                  "agriculture_bill_benefit_nill","istandwithfarmers","punishantifarmerbjp","bengalcoalscam",
+                  "nopromisecompletedyet","mamta_pk_drama","striketosaveindia","nautanki","tmc_nautanki","tmckadarama",
+                  "mamataketooltikait","mamtadrama","shameonbjp","banglachorerpisikechayna"
+                  ]
 

@@ -1,5 +1,6 @@
 #extras only not the commons
 #m1 finished
+#m2 finished
 party_keywords = {
     "bjp": ["modibrigaderally","modirsathebrigade","modirsathebangla","asolparibortan","bjpbrigade",
             "mithunda","brigadeground","brigadecholo","pmofindia","modi_job_do","bjpfailsindia",
@@ -26,7 +27,23 @@ party_keywords = {
             "tmc_hatao_bjp_lao","stophindimigration","endhindiimposition","stophindiimperialism","sambitpatra",
             "ramdrohi_par_rann","bjphataobetibachao","cowsmuggling","swagatamyogiji","puducherrywelcomesmodiji",
             "wastebjp","modionbrokenchair","srabantichatterjee","pmspeakuponssrcase","shivrajsinghchouhan",
-            "tomarmodikisanvirodhi"],
+            "tomarmodikisanvirodhi","sankalppatra","agriculturallaws","vote4sonarbangla","banglayaschebjp",
+            "sonarbanglasonkolpopotro","voteforbjp","bengalrejectsgujaratimanifesto","deepakprakash",
+            "modirsatheiasolporiborton","bjperongikarsonarbangla","bjpsankalppatra","bjpmanifesto","homeminister",
+            "banglayaschebjpdidi","modimadedisaster","pmmodiinbankura","bengalbjpjokers","modiexposed",
+            "baranagarebjpchai","gobackmodi","modigovt4ambaniadani","fekuinbengal","assetmonetisation",
+            "godimediasedeshbachao","modinotwelcome","madanruidas","bjpfearskejriwal","banglachaebjpmodel",
+            "bhainsariots","jumla_nahin_msp_do","300deathsatprotest","nofarmers_nofood","godimediaantifarmer",
+            "goyalghoregutoguti","bhagwabengal","ebarsonarbangla","arungovil","savejagannathland","fuddupm",
+            "rahulsinha","mukulroy","bjpdestroysdemocracy","bjpagainstdemocracy","modiharassingprofarmers",
+            "arjunsingh","bjpcdscandal","fight_for_farmer_right","bjp_mukt_bharat","modisoldindia",
+            "puruliawelcomesmodiji","namovolunteer","bankstrike","pvtpmoltd","centralgovt","ayegatomodihi",
+            "oilprice","bankstrikebankers","smritiirani","swapandasgupta","banglayamitshah","bjpmaanenirbhoyjanata",
+            "bankprivatisation","nirupammukherjee","atmanirbharbharat","bengalwithrajnath","cmyogiinbengal",
+            "farmersroarinbengal","yogiroxx","bongerbhumiteshah","bjpfails","tadipar","releaseranjitsingh",
+            "agriculture_bill_benefit_nill","istandwithfarmers","bjpworkerswestbengal","punishantifarmerbjp",
+            "striketosaveindia","bengalchahebjp","shameonbjp","sanatanadharma","ashoklahiri","bjpmp","babulupriyo"
+            ],
 
     "tmc": ["cmofbengal","hemantsoren","speakhindiandlose","prashantkishore","10ermichil",
             "vivekgupta","hinduhatingtmc","mamtabano","bjpvsmamta","suvenduvsmamata","mamatavssuvendu",
@@ -37,10 +54,19 @@ party_keywords = {
             "juibiswassocial","juibiswaslive","mamtaaspmin2024","cmmamatabanerjee","sanjayraut",
             "uddhavinsultsarmy","akhileshyadav","tejashwiyadav","tmcvsmuslimfront","sayantikabanerjee",
             "tmchhi","tmchataobanglabachao","nachiketachakraborty","subratamukherjee","tmcgoons",
-            "bengalwithdidi","bengalkibeti"],
+            "bengalwithdidi","bengalkibeti","khelasheshhobe","didirsathebangla","didirunnayanerkhelahobe",
+            "tmcmanifesto","banglargorbomamata","didir10ongikar","bengalwantsdidiagain","banglargorbomamata",
+            "votefordidi","junemaliah","sujoybanerjee","tmcterror","nusratjahan","janatawithmamata","mahuamoitra",
+            "tmcisfraud","removemamta","parthachatterjee","fakeitlikepishi","vote4rathinghosh","rathinghoshmla",
+            "tatatrinamool","khelakhotamhobe","tatadidi","didikadrama","arrogantdidi","mamataisback",
+            "bantibablirajasthanaao","khelatohhobe","khailahobe","134nowardtmc","banerjeebaganunit","mamta_pk_drama",
+            "mamtadrama","tmc_nautanki","tmckadarama","mamataketooltikait","mamtadrama","banglachorerpisikechayna",
+            "mamtahurt"
+            ],
 
     "leftfront": ["jyotibasu","leftfront","aisf","buddhadebbhattacharjee","isf","tmcvsmuslimfront",
                   "abbassiddiqui","furfurasharif","aimim","bengalmangecongress","congresspseudosecularism",
                   "bengalrejectscongress","congress","anandsharma","adhirranjan","congressalliance",
-                  "congressagainsthindus","sachinpilot"]
+                  "congressagainsthindus","sachinpilot","asaduddinowaisi","sitaramyechuri","congresscandidatelist",
+                  "vote4sanjuktamorcha","vote4congress","myleaderrahulgandhi"]
 }
