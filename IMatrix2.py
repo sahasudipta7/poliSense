@@ -7,22 +7,46 @@ import ast
 import hypernetx as hnx
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+from polarityParty import positive_words, negative_words
+from partyKeywords import party_keywords
 
-df = pd.read_csv(r"C:\Users\sahas\Downloads\february_2.csv")  #uploaded file
 
-party_keywords = {
-    "bjp": ["bjp", "modi", "amit shah", "indiawithmodi", "bengalwithnamo", "bengalwithbjp", "bengalwelcomesmodi", "pmmodi",
-            "narendramodi","mamtabanerjeekojaishriram","jaishriram","modiji","dhekiajuliwelcomesmodi","bjpgorbesonarbangla",
-            "atmanirbharpurvibharat","godimedia","bengalrejectsmodi","bengalrejectsbjp", "idiotpmmodi", "feku", "modiglobaldisaster","idiotpm",
-            "boycottbjp","chaiconspiracy","antifarmlaws","worldrenownedliar","modidhongihai","ram_card","modiinbengal","nirmalasitharaman",
-            "gretathunberg","modiwithfarmers","bengalwelcomespm","bjpgoonsattackingfarmers","rishiganga","pmoindia",
-            "wearewithutearakhand","prayforuttarakhand","poribortonyatra","rss","glaciar_burst","Chamoli","pmfloodfund",
-            "pmmodibusy","releasenodeepkaur","breakingnews","attack"],
-    "tmc": ["tmc", "mamata", "banerjee","mamtabanerjeekojaishriram","tmchataobanglabachao","didi","uttarakhanddisaster",
-            "murderermamata","duaresarkar","paraysamadhan","mamtabanerjee","suvenduadhikari","abhishekbanerjee","bhaipo","breakingnews",
-            "attack"],
-    "leftfront": ["left", "cpi", "marxist","leftlibgang"]
-}
+folder_path = r"C:\Users\sahas\Downloads"
+
+# List of CSV filenames to include
+filenames = [
+    "february_1.csv",
+    "march_1.csv",
+    "march_2.csv",
+    "april_1.csv",
+    "april_2.csv"
+]
+
+# Read and combine all files into one DataFrame
+dfs = []
+for file in filenames:
+    file_path = os.path.join(folder_path, file)
+    df_temp = pd.read_csv(file_path, dtype=str)
+    dfs.append(df_temp)
+
+df = pd.concat(dfs, ignore_index=True)
+print(f"Loaded {len(df)} total tweets from {len(filenames)} files.")
+
+
+# party_keywords = {
+#     "bjp": ["bjp", "modi", "amit shah", "indiawithmodi", "bengalwithnamo", "bengalwithbjp", "bengalwelcomesmodi", "pmmodi",
+#             "narendramodi","mamtabanerjeekojaishriram","jaishriram","modiji","dhekiajuliwelcomesmodi","bjpgorbesonarbangla",
+#             "atmanirbharpurvibharat","godimedia","bengalrejectsmodi","bengalrejectsbjp", "idiotpmmodi", "feku", "modiglobaldisaster","idiotpm",
+#             "boycottbjp","chaiconspiracy","antifarmlaws","worldrenownedliar","modidhongihai","ram_card","modiinbengal","nirmalasitharaman",
+#             "gretathunberg","modiwithfarmers","bengalwelcomespm","bjpgoonsattackingfarmers","rishiganga","pmoindia",
+#             "wearewithutearakhand","prayforuttarakhand","poribortonyatra","rss","glaciar_burst","Chamoli","pmfloodfund",
+#             "pmmodibusy","releasenodeepkaur","breakingnews","attack"],
+#     "tmc": ["tmc", "mamata", "banerjee","mamtabanerjeekojaishriram","tmchataobanglabachao","didi","uttarakhanddisaster",
+#             "murderermamata","duaresarkar","paraysamadhan","mamtabanerjee","suvenduadhikari","abhishekbanerjee","bhaipo","breakingnews",
+#             "attack"],
+#     "leftfront": ["left", "cpi", "marxist","leftlibgang"]
+# }
 
 opinion_classes = {    #each opinion class represents a hyperedge in the graph.
     1: "support_bjp",
@@ -33,16 +57,16 @@ opinion_classes = {    #each opinion class represents a hyperedge in the graph.
     6: "against_leftfront"
 }
 
-positive_words = ["support", "vote for", "win", "love", "good", "indiawithmodi", "bengalwithnamo", "bengalwithbjp", "bengalwelcomesmodi",
-                  "mamtabanerjeekojaishriram","jaishriram","dhekiajuliwelcomesmodi","bjpgorbesonarbangla","atmanirbharpurvibharat",
-                  "modiwithfarmers","bengalwelcomespm"
-                  ] # for polarity
-negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocracy","godimedia","bengalrejectsmodi",
-                  "bengalrejectsbjp","fakepromises","idiotpmmodi","feku","modiglobaldisaster","idiotpm","boycottbjp",
-                  "chaiconspiracy","leftlibgang","antifarmlaws","worldrenownedliar","modidhongihai","ram_card",
-                  "mamtabanerjeekojaishriram","tmchataobanglabachao","uttarakhanddisaster","gretathunberg","murderermamata",
-                  "neverforgetneverforgive","bjpgoonsattackingfarmers","rishiganga","wearewithutearakhand","prayforuttarakhand",
-                  "propoganda","glaciar_burst","chamoli","flood","pmmodibusy","bhaipo","releasenodeepkaur"]
+# positive_words = ["support", "vote for", "win", "love", "good", "indiawithmodi", "bengalwithnamo", "bengalwithbjp", "bengalwelcomesmodi",
+#                   "mamtabanerjeekojaishriram","jaishriram","dhekiajuliwelcomesmodi","bjpgorbesonarbangla","atmanirbharpurvibharat",
+#                   "modiwithfarmers","bengalwelcomespm"
+#                   ] # for polarity
+# negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocracy","godimedia","bengalrejectsmodi",
+#                   "bengalrejectsbjp","fakepromises","idiotpmmodi","feku","modiglobaldisaster","idiotpm","boycottbjp",
+#                   "chaiconspiracy","leftlibgang","antifarmlaws","worldrenownedliar","modidhongihai","ram_card",
+#                   "mamtabanerjeekojaishriram","tmchataobanglabachao","uttarakhanddisaster","gretathunberg","murderermamata",
+#                   "neverforgetneverforgive","bjpgoonsattackingfarmers","rishiganga","wearewithutearakhand","prayforuttarakhand",
+#                   "propoganda","glaciar_burst","chamoli","flood","pmmodibusy","bhaipo","releasenodeepkaur"]
 
 edges = {opinion_classes[i]: set() for i in range(1, 7)}
 for _, row in df.iterrows():

@@ -43,7 +43,8 @@ positive_words = ["support","vote for","win","love","good","indiawithmodi","beng
                   "rahulsuspendspoliticalrallies","rahulgandhiwithassam","rahulgandhivoiceofindia",
                   "istandwithbandisanjay","ebarbanglaraebjp","bjp4pursurah","banglarmanushbjpersathe",
                   "fakekissanandolan","mahavinashaghadi","votebjp4sonarbangla","bjptwohundredplus",
-                  "trinamoolcongresswins"
+                  "trinamoolcongresswins","namowithnewassam","vocalforlocal","banrathyatra","poribortonyatrathe",
+                  "poribortonyatrabengal","parivartanyatra","parivartanrathyatra"
 
 
                   ] # for polarity
@@ -140,6 +141,7 @@ negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocr
                   "banelectionralliesincovid","bjploveselectionthanvoters","fakegandhiclan","pappugang","fakehindutva",
                   "worstpmever","pappuinbangkok","haridwarmahakumbh2021","democracy_converted_into_brahminocracy",
                   "kumbhcorona","votebjp4gobarbangla","absenteepm","stopsuperspreaderevents","kumbhduringcovid",
-                  "postponejee2021","postponejee","postponejeemains2021","boycottceat"
+                  "postponejee2021","postponejee","postponejeemains2021","boycottceat","propoganda","pmmodibusy",
+                  "neverforgetneverforgive","farmersareindia","khalistaniterrorists"
                   ]
 
