@@ -9,8 +9,14 @@ party_keywords = {
         'bengalwelcomespm', 'bjpgoonsattackingfarmers', 'rishiganga', 'pmoindia', 'wearewithutearakhand', 'prayforuttarakhand', 'poribortonyatra',
         'rss', 'glaciar_burst', 'chamoli', 'pmfloodfund', 'pmmodibusy', 'releasenodeepkaur', 'breakingnews', 'attack',
         "uttarakhand","pmmodibusy","namowithnewassam","farmersareindia","antihinducaariots","naddaonabp",
-        "bjpinsultsidol","poribortonyatrathe","poribortonyatrabengal","parivartanyatra","parivartanrathyatra"
-
+        "bjpinsultsidol","poribortonyatrathe","poribortonyatrabengal","parivartanyatra","parivartanrathyatra",
+        "chakkajam","bjp4bangaon","farmersstandingfirm","modibengalcampaign","rathyatras","namaskaramjpnadda",
+        "fekubeard","startinrernetindelhi","india_bacchao_modi_hatao","bengalwelcomesnadda","teamnamo","shaheenbagh",
+        "postponegate2021","postponegate","gatemultipleattempts","rihanna","aatmanirbharbharatkabudget",
+        "nirmalasitharamanbudget2021","bjp_badboli_sarkar","namonomics","deshdrohibjp","budget2021","bogusbudget2021",
+        "unionbudget2021","centralbudget","nammobjp","budgetsession","budgetsession2021","bjpinsultsnationalanthem",
+        "financeministernirmalasitharaman","releasemandeeppoonia","bjpisscared","dontvoteforbjp",
+        "suppressbillsnotjournalists","budgetontruth"
 
 
         'bjpfailsindia', 'bjppetroltaxloot', 'runformodi', 'modi_rojgar_do', 'pradeepteamattacked', 'naukaridoyadegreewapaslo', 'pamelagoswami',
@@ -31,12 +37,12 @@ party_keywords = {
             "joybangla","pishijao","pishijoyshreeram","bengalwantsitsowndaughter","jihadididi","jakirhossain",
             "shahvsmamata","upenbiswas","saradhascam","zakirhussain","bombattack","zakirattack","zakirhussainminister",
             "mumtazbano","rohingyajamaat","azaannoisefree","standwithdilipmandal","maakitchen","maakirasoi",
-            "vocalforlocal"
-            
-            
-            "banrathyatra"],
+            "banrathyatra","bengalbudgetforall","aarnoimamata","vocalforlocal","taphashilirsathedidi","netajidnatest",
+            "vote4netaji","didivswho"
+            ],
 
     "leftfront": ["left", "cpi", "marxist","leftlibgang","bengalneedsleft","communists","left_congress_alliance",
-                  "cpim","leftvspolice"]
+                  "cpim","leftvspolice","justiceforsunandapushkar"
+                  ]
 }
 

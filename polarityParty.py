@@ -44,7 +44,9 @@ positive_words = ["support","vote for","win","love","good","indiawithmodi","beng
                   "istandwithbandisanjay","ebarbanglaraebjp","bjp4pursurah","banglarmanushbjpersathe",
                   "fakekissanandolan","mahavinashaghadi","votebjp4sonarbangla","bjptwohundredplus",
                   "trinamoolcongresswins","namowithnewassam","vocalforlocal","banrathyatra","poribortonyatrathe",
-                  "poribortonyatrabengal","parivartanyatra","parivartanrathyatra"
+                  "poribortonyatrabengal","parivartanyatra","parivartanrathyatra","bjp4bangaon","bengalbudgetforall",
+                  "aarnoimamata","taphashilirsathedidi","namaskaramjpnadda","bengalwelcomesnadda","teamnamo",
+                  "netajidnatest","vote4netaji","didivswho"
 
 
                   ] # for polarity
@@ -142,6 +144,11 @@ negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocr
                   "worstpmever","pappuinbangkok","haridwarmahakumbh2021","democracy_converted_into_brahminocracy",
                   "kumbhcorona","votebjp4gobarbangla","absenteepm","stopsuperspreaderevents","kumbhduringcovid",
                   "postponejee2021","postponejee","postponejeemains2021","boycottceat","propoganda","pmmodibusy",
-                  "neverforgetneverforgive","farmersareindia","khalistaniterrorists"
+                  "neverforgetneverforgive","farmersareindia","khalistaniterrorists","chakkajam","farmersstandingfirm",
+                  "pollgimmick","fekubeard","startinrernetindelhi","india_bacchao_modi_hatao","justiceforsunandapushkar",
+                  "postponegate2021","postponegate","gatemultipleattempts","rihanna","dhokhebaazbudget",
+                  "bjp_badboli_sarkar","namonomics","minimumgovernancemaximumpolitics","bogusbudget2021",
+                  "bjpinsultsnationalanthem","releasemandeeppoonia","bjpisscared","dontvoteforbjp",
+                  "suppressbillsnotjournalists","kursikalaalach"
                   ]
 

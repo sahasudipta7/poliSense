@@ -2,7 +2,6 @@
 # opinion classes 1)support for bjp 2)support for tmc 3) support for leftfront 4)against bjp 5)against tmc 6)against leftfront
 #represent this in an opinionated hypergraph.
 # py -3.11 -m pip install fastjsonschema
-#299
 import ast
 import hypernetx as hnx
 import pandas as pd
@@ -17,6 +16,7 @@ folder_path = r"C:\Users\sahas\Downloads"
 # List of CSV filenames to include
 filenames = [
     "february_1.csv",
+    "february_2.csv"
     "march_1.csv",
     "march_2.csv",
     "april_1.csv",
