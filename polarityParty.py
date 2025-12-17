@@ -1,6 +1,8 @@
 # march after standwithdilipmandal and support farmers
 #april after bjp4sonarbangla and rafaelscam
 
+from utilities import remove_duplicates_from_list_values
+
 positive_words = ["support","vote for","win","love","good","indiawithmodi","bengalwithnamo","bengalwithbjp","bengalwelcomesmodi",
                   "mamtabanerjeekojaishriram","jaishriram","dhekiajuliwelcomesmodi","bjpgorbesonarbangla","atmanirbharpurvibharat",
                   "modiwithfarmers","bengalwelcomespm","banglanijermeyekeichay","runformodi","khelahobe","didirdoot",
@@ -151,4 +153,7 @@ negative_words = ["remove","down with","against","hate","bad","bjpdestroysdemocr
                   "bjpinsultsnationalanthem","releasemandeeppoonia","bjpisscared","dontvoteforbjp",
                   "suppressbillsnotjournalists","kursikalaalach"
                   ]
+
+remove_duplicates_from_list_values(positive_words)
+remove_duplicates_from_list_values(negative_words)
 

@@ -3,23 +3,26 @@
 #represent this in an opinionated hypergraph.
 # py -3.11 -m pip install fastjsonschema
 import ast
+import random
 import hypernetx as hnx
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
 from polarityParty import positive_words, negative_words
 from partyKeywords import party_keywords
-
+from HG_IM import (opinion_based_seed_selection,relevance_based_seed_selection,
+                   polarity_aware_diffusion,LT_hypergraph,IC_hypergraph,greedyIC_hypergraph,CELF_IC_hypergraph
+                   ,CELFPP_IC_hypergraph)
 
 folder_path = r"C:\Users\sahas\Downloads"
 
 # List of CSV filenames to include
 filenames = [
-    "february_1.csv",
-    "february_2.csv"
-    "march_1.csv",
-    "march_2.csv",
-    "april_1.csv",
+    # "february_1.csv",
+    # "february_2.csv",
+    # "march_1.csv",
+    # "march_2.csv",
+    # "april_1.csv",
     "april_2.csv"
 ]
 
@@ -27,6 +30,7 @@ filenames = [
 dfs = []
 for file in filenames:
     file_path = os.path.join(folder_path, file)
+    # file_path = "C:\Users\sahas\Downloads\mar_1.csv.xlsx"
     df_temp = pd.read_csv(file_path, dtype=str)
     dfs.append(df_temp)
 
@@ -76,16 +80,16 @@ for _, row in df.iterrows():
             if any(w in text for w in positive_words): #for identifying sentiments
                 if party == "bjp":
                     edges["support_bjp"].add(row['user_id']) #users are nodes in this hypergraph
-                    #edges["against_tmc"].add(row["user_id"])
-                    #edges["against_leftfront"].add(row["user_id"])
+                    edges["against_tmc"].add(row["user_id"])
+                    edges["against_leftfront"].add(row["user_id"])
                 elif party == "tmc":
                     edges["support_tmc"].add(row["user_id"])
-                    # edges["against_bjp"].add(row['user_id'])
-                    # edges["against_leftfront"].add(row["user_id"])
+                    edges["against_bjp"].add(row['user_id'])
+                    edges["against_leftfront"].add(row["user_id"])
                 elif party == "leftfront":
                     edges["support_leftfront"].add(row["user_id"])
-                    # edges["against_bjp"].add(row['user_id'])
-                    # edges["against_tmc"].add(row["user_id"])
+                    edges["against_bjp"].add(row['user_id'])
+                    edges["against_tmc"].add(row["user_id"])
             elif any(w in text for w in negative_words):
                 if party == "bjp":
                     edges["against_bjp"].add(row['user_id'])
@@ -98,7 +102,71 @@ H = hnx.Hypergraph(edges);
 print("Nodes (users):", len(H.nodes))
 print("Opinion categories (hyperedges):", len(H.edges))
 
+#polarity_dict
+polarity_dict = {}
+
+for e in H.edges:                  # e = edge_name
+    users = H.edges[e]             # set of users
+
+    if e.startswith("support"):
+        pol = 1
+    elif e.startswith("against"):
+        pol = -1
+    else:
+        continue
+
+    for u in users:
+        polarity_dict[(u, e)] = pol
+
+
+# HG_IM
+# print("Seed Set: ",opinion_based_seed_selection(H,5));
+# T_prime = ["support_bjp", "against_tmc", "support_leftfront"]  # example topic subset
+# r = {"support_bjp": 0.8, "against_tmc": 0.5, "support_leftfront": 0.6}
+
+k = 5
+
+# seed_set = relevance_based_seed_selection(H, T_prime, r, k)
+# print("Seed Set:", seed_set)
+
+# theta=0.6
+
+#LT_HG
+
+# print("LTspread: ",LT_hypergraph(H,seed_set,0.0,0.1,10))
+# print("ICspread: ",IC_hypergraph(H,seed_set,0.5,10))
+
+# S, spread, timeLapse = greedyIC_hypergraph(H,k,0.1,2)
+# print("Selected seeds GIC: ", S)
+# print("Spread after each iteration GIC: ", spread)
+# print("Time elapsed GIC: ", timeLapse)
+
+
+p = 0.01
+mc = 10
+
+# S, timeLapse, mean_spread = CELF_IC_hypergraph(H, k, p=p, mc=mc)
+# S, timeLapse, mean_spread = greedyIC_hypergraph(H, k, p=p, mc=mc)
+S, timeLapse, mean_spread = CELFPP_IC_hypergraph(H, k, p=p, mc=mc)
+
+print("Final CELF++ seed set:", S)
+print("Time lapse after each seed:", timeLapse)
+print("Final mean spread:", mean_spread)
+
+# print("Final seed set:", S)
+# print("Time lapse:", timeLapse)
+# print("Final mean spread:", mean_spread)
+
+
+#IMPORTANT!!!!!
+# activated=polarity_aware_diffusion(H,seed_set,polarity_dict,theta,rng=random.Random(42))
+# print("Activated users:", activated)
+
+
+
 # Draw
 hnx.draw(H, with_node_labels=False)
 plt.title("Graph Visualisation");
 plt.show();
+
+

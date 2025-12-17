@@ -1,22 +1,37 @@
+from utilities import remove_duplicates_from_dict_values
+
 
 party_keywords = {
     "bjp": ['bjp', 'modi', 'amitshah', 'pratap_sarangi', 'rajnathsingh', 'myogiadityanath', 'indiawithmodi',
             'bengalwithnamo', 'bengalwithbjp', 'bengalwelcomesmodi', 'pmmodi', 'narendramodi', 'mamtabanerjeekojaishriram',
-            'jaishriram', 'modiji', 'dhekiajuliwelcomesmodi', 'bjpgorbesonarbangla', 'atmanirbharpurvibharat', 'godimedia', 'bengalrejectsmodi',
-            'bengalrejectsbjp', 'idiotpmmodi', 'feku', 'modiglobaldisaster', 'idiotpm', 'boycottbjp', 'chaiconspiracy', 'antifarmlaws',
-            'worldrenownedliar', 'modidhongihai', 'ram_card', 'modiinbengal', 'nirmalasitharaman', 'gretathunberg', 'modiwithfarmers',
-            'bengalwelcomespm', 'bjpgoonsattackingfarmers', 'rishiganga', 'pmoindia', 'wearewithutearakhand', 'prayforuttarakhand', 'poribortonyatra',
+            'jaishriram', 'modiji', 'dhekiajuliwelcomesmodi', 'bjpgorbesonarbangla', 'atmanirbharpurvibharat', 'godimedia',
+            'bengalrejectsmodi','antifarmlaws','prayforuttarakhand', 'poribortonyatra','modiwithfarmers',
+            'bengalrejectsbjp', 'idiotpmmodi', 'feku', 'modiglobaldisaster', 'idiotpm', 'boycottbjp', 'chaiconspiracy',
+            'worldrenownedliar', 'modidhongihai', 'ram_card', 'modiinbengal', 'nirmalasitharaman', 'gretathunberg',
+            'bengalwelcomespm', 'bjpgoonsattackingfarmers', 'rishiganga', 'pmoindia', 'wearewithutearakhand',
             'rss', 'glaciar_burst', 'chamoli', 'pmfloodfund', 'pmmodibusy', 'releasenodeepkaur', 'breakingnews', 'attack',
-            'bjpfailsindia', 'bjppetroltaxloot', 'runformodi', 'modi_rojgar_do', 'pradeepteamattacked', 'naukaridoyadegreewapaslo', 'pamelagoswami',
-            'suvenduadhikari', 'gobackmodi', 'chonkidaarchorhai', 'bjpthepartyisover', 'saffron_party', 'uttarakhanddisaster', 'hindu_muslim_propaganda',
-            'bjpinsultsmaadurga', 'bjpagainstnation', 'bjpagainstfarmers', 'bjp_against_true_indians', 'fuelloot', 'cocaine', 'junkiesofbjp',
-            'bhakt', 'bjpyouthleaderpamela', 'pameladrugs', 'bjpsehobena', 'petroldieselpricehike', 'petrolprice', 'petrolpricehike', 'dieselprice',
-            'justiceforsushantsinghrajput', 'justice4dishasalian', 'dpstopintimidatingfarmers', 'ebarbanglaybjp', 'bengalbudgetforall', 'istandwithfarmers', 'sonarbangla',
-            'rollbackmoditax', 'releasedetainedfarmers', 'caa', 'amitshahinbengal', 'amitshahji', 'railrokoforfarmers', 'bjpforbengal',
-            'poribortoninbengal', 'sonarbanglaelectrified', 'kisanaandolan', 'shahvsmamata', 'teamnamo', 'vote4modi', 'modifuelscam',
-            'looteribjp', 'modihikespetrolprice', 'bjpsebetibachao', 'chaiwala', 'save_unnao_ki_beti', 'dilipghoshbjp', 'pariwartanyatra',
-            'jpnadda', 'modigovt', 'petrol100', 'farmlaws', 'rakeshtikait', 'yashdasgupta', 'mithunchakraborty', 'jumla_for_bengal',
-            'rammandir', 'releasedisharavi', 'dineshtrivedi', 'farmbills2020', 'toolkitexposed', 'gretatoolkit', 'gretathunbergtoolkit', 'mohanbhagwat',
+            "uttarakhand", "pmmodibusy", "namowithnewassam", "farmersareindia", "antihinducaariots", "naddaonabp",
+            "bjpinsultsidol", "poribortonyatrathe", "poribortonyatrabengal", "parivartanyatra", "parivartanrathyatra",
+            "chakkajam", "bjp4bangaon", "farmersstandingfirm", "modibengalcampaign", "rathyatras", "namaskaramjpnadda",
+            "fekubeard", "startinrernetindelhi", "india_bacchao_modi_hatao", "bengalwelcomesnadda", "teamnamo",
+            "shaheenbagh","postponegate2021", "postponegate", "gatemultipleattempts", "rihanna",
+            "aatmanirbharbharatkabudget",'pradeepteamattacked', 'naukaridoyadegreewapaslo', 'pamelagoswami',"budget2021",
+            "nirmalasitharamanbudget2021", "bjp_badboli_sarkar", "namonomics", "deshdrohibjp", "dontvoteforbjp",
+            "bogusbudget2021","unionbudget2021", "centralbudget", "nammobjp", "budgetsession", "budgetsession2021",
+            "bjpinsultsnationalanthem","financeministernirmalasitharaman", "releasemandeeppoonia", "bjpisscared",
+            "suppressbillsnotjournalists", "budgetontruth"'bjpfailsindia', 'bjppetroltaxloot', 'runformodi',
+            'modi_rojgar_do', 'uttarakhanddisaster', 'hindu_muslim_propaganda','cocaine', 'junkiesofbjp',
+            'suvenduadhikari', 'gobackmodi', 'chonkidaarchorhai', 'bjpthepartyisover', 'saffron_party',
+            'bjpinsultsmaadurga', 'bjpagainstnation', 'bjpagainstfarmers', 'bjp_against_true_indians', 'fuelloot',
+            'bhakt', 'bjpyouthleaderpamela', 'pameladrugs', 'bjpsehobena', 'petroldieselpricehike', 'petrolprice',
+            'petrolpricehike', 'dieselprice','bengalbudgetforall', 'istandwithfarmers', 'sonarbangla','bjpforbengal',
+            'justiceforsushantsinghrajput', 'justice4dishasalian', 'dpstopintimidatingfarmers', 'ebarbanglaybjp',
+            'rollbackmoditax', 'releasedetainedfarmers', 'caa', 'amitshahinbengal', 'amitshahji', 'railrokoforfarmers',
+            'poribortoninbengal', 'sonarbanglaelectrified', 'kisanaandolan', 'shahvsmamata', 'teamnamo', 'vote4modi',
+            'modifuelscam','gretathunbergtoolkit', 'mohanbhagwat', 'jumla_for_bengal', 'pariwartanyatra',
+            'looteribjp', 'modihikespetrolprice', 'bjpsebetibachao', 'chaiwala', 'save_unnao_ki_beti', 'dilipghoshbjp',
+            'jpnadda', 'modigovt', 'petrol100', 'farmlaws', 'rakeshtikait', 'yashdasgupta', 'mithunchakraborty',
+            'rammandir', 'releasedisharavi', 'dineshtrivedi', 'farmbills2020', 'toolkitexposed', 'gretatoolkit',
             'justicedueinssrcase', 'iamagainstmodigovt', 'pmkisan', 'supportfarmers', 'pmcares', 'ramkanaam',
         
             "modibrigaderally","modirsathebrigade","modirsathebangla","asolparibortan","bjpbrigade",
@@ -119,6 +134,8 @@ party_keywords = {
             "joybangla","pishijao","pishijoyshreeram","bengalwantsitsowndaughter","jihadididi","jakirhossain",
             "shahvsmamata","upenbiswas","saradhascam","zakirhussain","bombattack","zakirattack","zakirhussainminister",
             "mumtazbano","rohingyajamaat","azaannoisefree","standwithdilipmandal","maakitchen","maakirasoi",
+            "banrathyatra","bengalbudgetforall","aarnoimamata","vocalforlocal","taphashilirsathedidi","netajidnatest",
+            "vote4netaji","didivswho"
         
             "cmofbengal","hemantsoren","speakhindiandlose","prashantkishore","10ermichil",
             "vivekgupta","hinduhatingtmc","mamtabano","bjpvsmamta","suvenduvsmamata","mamatavssuvendu",
@@ -170,6 +187,8 @@ party_keywords = {
                   "vote4sanjuktamorcha","vote4congress","myleaderrahulgandhi",
                   
                   "left", "cpi", "marxist","leftlibgang","bengalneedsleft","communists","left_congress_alliance",
-                  "cpim","leftvspolice"
+                  "cpim","leftvspolice","justiceforsunandapushkar"
                   ]
 }
+
+remove_duplicates_from_dict_values(party_keywords)
